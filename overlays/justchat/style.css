@@ -9,8 +9,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 20% 30% 25% 25%;
+    grid-template-rows: 15% 35% 35% 15%;
     height: 95.5vh;
     width: 95vw;
     margin: auto;
