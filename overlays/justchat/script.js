@@ -35,4 +35,5 @@ function updateTime() {
     // Display the time
     timeSpan.innerHTML = hours + ":" + minutes + ":" + seconds;
 }
-window.setInterval(updateTime, 1000);
+window.setInterval(updateTime, 100);
+updateTime();
