@@ -1,5 +1,5 @@
 // Get the current time plus 5 minutes and store it to endTime
-var endTime = new Date().getTime() + 5 * 60 * 1000;
+var endTime = new Date().getTime() + 5 * 1 * 1000;
 
 // Function to format the time
 function formatTime(number) {
@@ -30,6 +30,7 @@ var timer = setInterval(function() {
 
         // Stop the timer
         clearInterval(timer);
+
     } else {
 
         // Get hours, minutes and seconds
@@ -42,8 +43,24 @@ var timer = setInterval(function() {
         minutes = formatTime(minutes);
         seconds = formatTime(seconds);
 
-        // Display the time
-        document.getElementById("countdown").innerHTML = hours + ":" + minutes + ":" + seconds;
+        // Check if there is less than 10 seconds left
+        if (seconds < 10) {
+
+            // Display the time in the countdown mm:ss
+            document.getElementById("countdown").innerHTML = seconds;
+
+        } else {
+
+            // Display the time
+            document.getElementById("countdown").innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+    }
+
+    // Check if there is less than 10 seconds left
+    if (diff <= 10000) {
+
+        // Change the font size to be double the size
+        document.getElementById("countdown").style.fontSize = "50vh";
 
     }
 

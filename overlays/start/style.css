@@ -27,4 +27,5 @@ body>#countdown {
     font-size: 300%;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    transition: 5s;
 }
