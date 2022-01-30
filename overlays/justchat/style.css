@@ -5,15 +5,15 @@ body {
     background: linear-gradient(90deg, rgba(34, 195, 128, 1) 0%, rgba(149, 28, 171, 1) 100%);
     color: white;
     font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
 }
 
 .container {
     display: grid;
     grid-template-columns: 20% 30% 25% 25%;
     grid-template-rows: 15% 35% 35% 15%;
-    height: 95.5vh;
-    width: 95vw;
-    margin: auto;
+    height: calc(100vh - 30px);
+    width: calc(100vw - 30px);
     gap: 5px 5px;
     grid-auto-flow: row;
     grid-template-areas: "title title title chat" "plexusdot cam cam chat" "plexusdot cam cam chat" "plexusdot game_name game_name time";
@@ -39,7 +39,7 @@ body {
 .time {
     grid-area: time;
     text-align: center;
-    font-size: 300%;
+    font-size: 7.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
