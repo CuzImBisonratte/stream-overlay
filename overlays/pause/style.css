@@ -1,0 +1,58 @@
+/* Import the font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Source+Code+Pro:wght@500&display=swap');
+html {
+    height: 80%;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(34, 195, 128, 1) 0%, rgba(149, 28, 171, 1) 100%);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    gap: 2.5vw 2.5vw;
+    grid-auto-flow: row;
+    grid-template-areas: "text chat" "whatever chat";
+    margin: 5vh;
+    margin-right: 5vw;
+    height: 100%;
+}
+
+.text {
+    grid-area: text;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10vh;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vh;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vh;
+}
+
+.chat {
+    grid-area: chat;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10vh;
+    height: max-content;
+    height: 100%;
+}
+
+.whatever {
+    grid-area: whatever;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10vh;
+    height: max-content;
+    height: 100%;
+}
