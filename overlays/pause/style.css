@@ -55,4 +55,6 @@ h2 {
     border-radius: 10vh;
     height: max-content;
     height: 100%;
+    font-size: 600%;
+    text-align: center;
 }
