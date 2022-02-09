@@ -16,3 +16,4 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 4. Select "Browser"
 5. Choose 1920x1080 as screen resolution
 6. Paste the URL of the overlay you want to use
+7. Remove everything from the "Custom CSS" section
