@@ -1,0 +1,54 @@
+/* Import the font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&family=Source+Code+Pro:wght@500&display=swap');
+body {
+    margin: 0;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
+    grid-template-rows: 100vh;
+    grid-template-areas: "black blue red pink green lightblue yellow white";
+    grid-gap: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.black {
+    grid-area: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.blue {
+    grid-area: blue;
+    background-color: rgb(0, 0, 255);
+}
+
+.red {
+    grid-area: red;
+    background-color: rgb(255, 0, 0);
+}
+
+.pink {
+    grid-area: pink;
+    background-color: rgb(255, 0, 255);
+}
+
+.green {
+    grid-area: green;
+    background-color: rgb(0, 255, 0);
+}
+
+.lightblue {
+    grid-area: lightblue;
+    background-color: rgb(0, 255, 255);
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: rgb(255, 255, 0);
+}
+
+.white {
+    grid-area: white;
+    background-color: rgb(255, 255, 255);
+}
