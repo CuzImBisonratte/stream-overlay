@@ -1,5 +1,5 @@
 // Get the current time plus 5 minutes and store it to endTime
-var endTime = new Date().getTime() + 0.55 * 60 * 1000;
+var endTime = new Date().getTime() + 5 * 60 * 1000;
 
 // Function to format the time
 function formatTime(number) {
