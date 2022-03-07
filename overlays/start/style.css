@@ -9,7 +9,7 @@ body {
 
 body>#title {
     font-family: 'Source Code Pro', monospace;
-    font-size: 2.5em;
+    font-size: 5em;
     text-align: center;
     margin-top: 1em;
 }
@@ -24,7 +24,7 @@ body>#countdown {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 300%;
+    font-size: 20rem;
     color: white;
     font-family: 'Quicksand', sans-serif;
     transition: 5s;
