@@ -17,3 +17,7 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 5. Choose 1920x1080 as screen resolution
 6. Paste the URL of the overlay you want to use
 7. Remove everything from the "Custom CSS" section
+
+
+## Hosting
+If you don't want to use your pc as a server, you can use either a version of our overlay on github or you can host it yourself on a mini-pc like a raspberry pi.
