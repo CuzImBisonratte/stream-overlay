@@ -1,13 +1,19 @@
+// Settings
 slide_in_duration = 2500;
 slide_out_duration = 2500;
+
+// Get the needed elements
 const bottom_bar = document.getElementById('bottom_bar');
 
+// Create new client instance
 const client = new tmi.Client({
     channels: ['cuzimbisonratte']
 });
 
+// Try to connect to Twitch
 client.connect();
 
+// Create the functions to slide the bar in and out
 function slideInBar() {
     // Slide in the bottom bar SMOOTH
     bottom_bar.style.transition = "all " + slide_in_duration / 1000 + "s ease-in-out";
@@ -20,6 +26,7 @@ function slideOutBar() {
     bottom_bar.style.bottom = "-200px";
 }
 
+// When the client receives a chat message
 client.on('message', (channel, tags, message, self) => {
 
     // Check if user is a mod or the streamer
@@ -50,6 +57,8 @@ client.on('message', (channel, tags, message, self) => {
     }
 });
 
+
+// When a raid is triggered
 client.on('raided', (channel, username, viewers) => {
 
     // Get the bar background color and text color
