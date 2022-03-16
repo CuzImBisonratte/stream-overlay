@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#bottom_bar {
+    opacity: 95%;
+    position: fixed;
+    bottom: -100px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #ff0000;
+    border-radius: 20px 20px 0 0;
+    z-index: 100;
+    font-size: 20px;
+}
