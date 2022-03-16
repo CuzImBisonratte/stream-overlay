@@ -52,7 +52,6 @@ client.on('message', (channel, tags, message, self) => {
                 // Remove "!bar "
                 const text = message.replace('!bar ', '');
             }
-
         }
     }
 });
@@ -125,7 +124,6 @@ client.on('raided', (channel, username, viewers) => {
                         // Reset the bar colors
                         bottom_bar.style.backgroundColor = old_bar_background_color;
                         bottom_bar.style.color = old_bar_text_color;
-
                     }, slide_out_duration);
 
                 }, 3000);
@@ -134,8 +132,5 @@ client.on('raided', (channel, username, viewers) => {
 
         }, 2000);
 
-
     }, slide_in_duration);
-
-
 });
