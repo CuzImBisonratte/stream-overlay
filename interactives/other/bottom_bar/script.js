@@ -92,6 +92,26 @@ client.on('message', (channel, tags, message, self) => {
 
                 // Set the text
                 bottom_bar.innerHTML = text;
+
+            } else if (message.startsWith('!barsize')) {
+
+                // Get the size
+                const height = message.split(' ')[1];
+                const fontsize = message.split(' ')[2];
+
+                // Check if fontsize argument has been passed
+                if (fontsize) {
+
+                    // Set the fontsize
+                    bottom_bar.style.fontSize = fontsize + "px";
+                }
+
+                // Update bar height variable
+                bar_height = height;
+
+                // Resize the bar
+                resizeBar();
+
             } else if (message === "!barclose") {
 
                 // Slide out the bar
