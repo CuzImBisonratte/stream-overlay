@@ -8,7 +8,7 @@ This is the overlay i use in my stream.
 Plexus Dots (particles.js) - VincentGarreau - [here](https://github.com/VincentGarreau/particles.js)   
 Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)  
 
-## Implementation
+## Implementation - OBS
 
 1. Open OBS
 2. Go to the scene you want to use the overlay on
