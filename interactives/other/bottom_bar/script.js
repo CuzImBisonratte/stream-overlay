@@ -1,6 +1,7 @@
 // Settings
 slide_in_duration = 2500;
 slide_out_duration = 2500;
+bar_height = 100;
 
 // Get the needed elements
 const bottom_bar = document.getElementById('bottom_bar');
@@ -25,7 +26,7 @@ function slideInBar() {
 function slideOutBar() {
     // Slide out the bottom bar SMOOTH
     bottom_bar.style.transition = "all " + slide_out_duration / 1000 + "s ease-in-out";
-    bottom_bar.style.bottom = "-200px";
+    bottom_bar.style.bottom = "-" + bar_height + "px";
     bar_open = false;
 }
 
