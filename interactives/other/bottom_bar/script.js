@@ -39,15 +39,19 @@ client.on('message', (channel, tags, message, self) => {
             if (message.startsWith('!barcolor')) {
 
                 // Get the color
-                const color = message.split(' ')[1];
+                const background_color = message.split(' ')[1];
+                const text_color = message.split(' ')[2];
+
+                // Set the colors
+                bottom_bar.style.backgroundColor = background_color;
 
                 // Check if color is valid
-                if (color) {
+                if (text_color) {
 
                     // Change the color
-                    bottom_bar.style.backgroundColor = color;
+                    bottom_bar.style.color = text_color;
                 }
-            } else if (message.startsWith('!bar') || !message.startsWith('!bottom_bar')) {
+
 
                 // Remove "!bar "
                 const text = message.replace('!bar ', '');
