@@ -21,3 +21,44 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 
 ## Hosting
 If you don't want to use your pc as a server, you can use either a version of our overlay on github or you can host it yourself on a mini-pc like a raspberry pi.
+
+
+# Interactives - commands
+
+## All user commands
+
+### Konfetti
+- Behaviour: Sends confetti to the screen
+- Command: `!konfetti`
+
+### Fireworks
+- Behaviour: Sends fireworks to the screen
+- Command: `!firework`
+
+## Mod-Only commands
+
+### Barcolor
+- Behaviour: The barcolor command changes the color of the bottom bar.
+- Command: `!barcolor [background color] [text color]`
+- Arguments: 
+    - [background color]: The color of the background of the bottom bar.
+    - [text color]: The color of the text in the bottom bar. 
+
+### Bar text
+- Behaviour: The bar text command changes the text in the bottom bar.
+- Command: `!bar [text]`
+- Arguments: 
+    - [text]: The text you want to display in the bottom bar.
+
+### Barsize
+- Behaviour: The barsize command changes the height and fontsize of the bottom bar.
+- Command: `!barsize [height] [fontsize]`
+- Arguments: 
+    - [height]: The height of the bottom bar.
+    - [fontsize]: The fontsize of the bottom bar.
+
+### Slide-IN/OUT
+- Behaviour: Slide in/out the bottom bar.
+- Commands:
+    - `!barclose`: Slide out the bottom bar.
+    - `!baropen`: Slide in the bottom bar.
