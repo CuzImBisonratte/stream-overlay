@@ -55,9 +55,22 @@ client.on('message', (channel, tags, message, self) => {
                     bottom_bar.style.color = text_color;
                 }
 
+            } else if (message.startsWith('!bar ')) {
 
                 // Remove "!bar "
                 const text = message.replace('!bar ', '');
+
+                console.log(text);
+
+                // Check if bar is open
+                if (!bar_open) {
+
+                    // Slide in the bar
+                    slideInBar();
+                }
+
+                // Set the text
+                bottom_bar.innerHTML = text;
             } else if (message === "!barclose") {
 
                 // Slide out the bar
