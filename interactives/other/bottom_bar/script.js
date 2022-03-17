@@ -58,6 +58,14 @@ client.on('message', (channel, tags, message, self) => {
 
                 // Remove "!bar "
                 const text = message.replace('!bar ', '');
+            } else if (message === "!barclose") {
+
+                // Slide out the bar
+                slideOutBar();
+            } else if (message === "!baropen") {
+
+                // Slide in the bar
+                slideInBar();
             }
         }
     }
