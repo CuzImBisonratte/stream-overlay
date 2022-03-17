@@ -4,6 +4,7 @@ slide_out_duration = 2500;
 
 // Get the needed elements
 const bottom_bar = document.getElementById('bottom_bar');
+var bar_open = false;
 
 // Create new client instance
 const client = new tmi.Client({
@@ -18,12 +19,14 @@ function slideInBar() {
     // Slide in the bottom bar SMOOTH
     bottom_bar.style.transition = "all " + slide_in_duration / 1000 + "s ease-in-out";
     bottom_bar.style.bottom = "0px";
+    bar_open = true;
 }
 
 function slideOutBar() {
     // Slide out the bottom bar SMOOTH
     bottom_bar.style.transition = "all " + slide_out_duration / 1000 + "s ease-in-out";
     bottom_bar.style.bottom = "-200px";
+    bar_open = false;
 }
 
 // When the client receives a chat message
