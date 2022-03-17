@@ -30,6 +30,26 @@ function slideOutBar() {
     bar_open = false;
 }
 
+function resizeBar() {
+    // Resize the bottom bar
+    bottom_bar.style.height = bar_height + "px";
+
+    // Check if bar is not open
+    if (!bar_open) {
+
+        // Set the bar to the right position
+        bottom_bar.style.bottom = "-" + bar_height + "px";
+
+    } else {
+
+        // Set the bar to the right position
+        bottom_bar.style.bottom = "0px";
+    }
+}
+
+// Initialize the bar
+resizeBar();
+
 // When the client receives a chat message
 client.on('message', (channel, tags, message, self) => {
 
