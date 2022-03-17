@@ -25,10 +25,13 @@
                 if (message === '!konfetti') {
                     // Start confetti
                     confetti({
-                        particleCount: 1000,
+                        particleCount: 100,
                         spread: 180,
+                        angle: 270,
+                        startVelocity: 50,
                         origin: {
-                            y: 0.6
+                            x: 0.5,
+                            y: 0
                         }
                     });
                 }
