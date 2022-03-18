@@ -9,14 +9,13 @@ body {
 }
 
 #bottom_bar {
-    opacity: 95%;
     position: fixed;
     bottom: -100px;
     text-align: center;
     left: 0;
     right: 0;
     height: 100px;
-    background-color: #ff0000;
+    background-color: #aaaaaa;
     border-radius: 20px 20px 0 0;
     z-index: 100;
     font-size: 20px;
