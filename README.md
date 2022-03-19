@@ -61,4 +61,9 @@ If you don't want to use your pc as a server, you can use either a version of ou
 - Behaviour: Slide in/out the bottom bar.
 - Commands:
     - `!barclose`: Slide out the bottom bar.
-    - `!baropen`: Slide in the bottom bar.
+    - `!baropen`: Slide in the bottom bar.  
+
+### Sayings
+- Behaviour: The sayings command activates the bottom bar and displays a random predefined saying that switches automatically.
+- Command: `!bauchbinde`  
+_Coming Soon_
