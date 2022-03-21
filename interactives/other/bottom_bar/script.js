@@ -81,8 +81,6 @@ client.on('message', (channel, tags, message, self) => {
                 // Remove "!bar "
                 const text = message.replace('!bar ', '');
 
-                console.log(text);
-
                 // Check if bar is open
                 if (!bar_open) {
 
