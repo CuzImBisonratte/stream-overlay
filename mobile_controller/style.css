@@ -9,10 +9,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
-    height: 100vh;
+    height: 85vh;
     max-width: 100vw;
     font-family: Dosis;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 body {
