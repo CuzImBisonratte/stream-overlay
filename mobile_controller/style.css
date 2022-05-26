@@ -33,6 +33,7 @@ body {
 }
 
 .card {
+    font-size: 50px;
     margin: 2px;
     width: calc(50% - 4px);
     height: 100px;
