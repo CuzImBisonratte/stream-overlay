@@ -36,7 +36,6 @@ body {
     margin: 2px;
     width: calc(50% - 4px);
     height: 100px;
-    background-color: #880025;
     border-radius: 25px;
     display: flex;
     justify-content: center;
