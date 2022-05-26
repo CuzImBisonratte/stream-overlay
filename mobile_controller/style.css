@@ -1,0 +1,45 @@
+/* import of "Dosis" (font to use) */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+/* Whole document */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    height: 100vh;
+    max-width: 100vw;
+    font-family: Dosis;
+    text-transform: uppercase;
+}
+
+body {
+    padding: 10px;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    margin: 2px;
+    width: calc(50% - 4px);
+    height: 100px;
+    background-color: #880025;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
