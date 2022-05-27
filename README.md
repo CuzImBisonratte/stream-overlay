@@ -2,7 +2,6 @@
 
 This is the overlay i use in my stream.
 
-
 ## Credits
 
 Plexus Dots (particles.js) - VincentGarreau - [here](https://github.com/VincentGarreau/particles.js)   
@@ -17,6 +16,8 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 5. Choose 1920x1080 as screen resolution
 6. Paste the URL of the overlay you want to use
 7. Remove everything from the "Custom CSS" section
+
+!!! WARNING: The Github Pages instances only work with the "overlay" folder in the root of the repository. All other files would react to things on my channel... !!!
 
 
 ## Hosting
