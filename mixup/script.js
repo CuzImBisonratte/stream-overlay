@@ -306,6 +306,15 @@ setInterval(() => {
                             }
                         });
 
+                    } else if (entry.action === "bar_colorchange") {
+
+                        // Get the bar background color and text color
+                        var bg = entry.other.split(' ')[0];
+                        var text = entry.other.split(' ')[1];
+
+                        // Set the bar colors
+                        bottom_bar.style.backgroundColor = bg;
+                        bottom_bar.style.color = text;
                     }
                 }
             }
