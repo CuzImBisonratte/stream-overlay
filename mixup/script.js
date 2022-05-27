@@ -315,6 +315,14 @@ setInterval(() => {
                         // Set the bar colors
                         bottom_bar.style.backgroundColor = bg;
                         bottom_bar.style.color = text;
+                    } else if (entry.action === "bar_resize") {
+
+                        // Set the bar height to 50
+                        bar_height = 50;
+                        resizeBar();
+
+                        // Font size 35
+                        bottom_bar.style.fontSize = 35 + "px";
                     }
                 }
             }
