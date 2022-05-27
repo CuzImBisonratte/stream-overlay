@@ -1,7 +1,11 @@
 <?php
     // Get values from ajax
     $action = $_POST['action'];
-    $bar_text = $_POST['bar_text'];
+    if (isset($_POST['bar_text'])) {
+        $bar_text = $_POST['bar_text'];
+    } else {
+        $bar_text = "";
+    }
     $other = $_POST['other'];
 
     // Database credentials
