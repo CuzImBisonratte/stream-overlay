@@ -46,15 +46,3 @@ body {
     align-items: center;
     color: #ffffff;
 }
-
-#height_bar {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 100%;
-    background-color: aqua;
-    opacity: 1;
-    margin-top: 100vh;
-}
