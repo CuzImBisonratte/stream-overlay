@@ -42,6 +42,8 @@ var button_bar_twitter = document.getElementById("button_bar_twitter");
 var button_bar_discord = document.getElementById("button_bar_discord");
 var button_bar_soon = document.getElementById("button_bar_soon");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
+var button_bar_color_1 = document.getElementById("button_bar_color_1");
+var button_bar_color_2 = document.getElementById("button_bar_color_2");
 var button_effect_confetti = document.getElementById("button_effect_confetti");
 
 // Add event listeners
@@ -130,6 +132,38 @@ button_bar_adversal.addEventListener("click", function() {
         data: {
             action: "bar_textchange",
             bar_text: "#Werbung"
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
+button_bar_color_1.addEventListener("click", function() {
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_colorchange",
+            other: "#1f1f25 lightblue"
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
+button_bar_color_2.addEventListener("click", function() {
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_colorchange",
+            other: "lightblue #1f1f25"
         },
         success: function(data) {
             console.log(data);
