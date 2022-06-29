@@ -24,6 +24,9 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 If you don't want to use your pc as a server, you can use either a version of our overlay on github or you can host it yourself on a mini-pc like a raspberry pi.
 
 
+# Interactives - Control Buttons
+The /mixup/ folder can be controlled from /mobile_controller/  
+
 # Interactives - commands
 
 ## All user commands
