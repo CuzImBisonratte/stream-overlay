@@ -44,3 +44,26 @@ body {
     align-items: center;
     color: #ffffff;
 }
+
+
+/* Card background colors */
+
+.bg-darkblue {
+    background-color: #2e2e3e;
+}
+
+.bg-lightblue {
+    background-color: #4287f5;
+}
+
+.bg-lightgreen {
+    background-color: #32a852;
+}
+
+.bg-orange {
+    background-color: #ff4500;
+}
+
+.bg-purple {
+    background-color: #ab20b3;
+}
