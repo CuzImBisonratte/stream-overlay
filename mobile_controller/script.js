@@ -8,23 +8,6 @@ $.ajax({
 });
 
 
-// Get all elements with class "bg-random"
-var bg_random_elements = document.getElementsByClassName("bg-random");
-
-// Loop through all elements
-for (var i = 0; i < bg_random_elements.length; i++) {
-
-    // Create 3 random numbers between 0 and 128
-    var r = Math.floor(Math.random() * 128);
-    var g = Math.floor(Math.random() * 128);
-    var b = Math.floor(Math.random() * 128);
-
-    // Set background color
-    bg_random_elements[i].style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
-}
-
-
-
 // Function to show something as chart
 function show_chart(input_percent) {
 
@@ -48,7 +31,8 @@ function show_chart(input_percent) {
 
 var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
-var button_bar_custom = document.getElementById("button_bar_custom");
+var button_bar_custom_text = document.getElementById("button_bar_custom_text");
+var button_bar_custom_color = document.getElementById("button_bar_custom_color");
 var button_bar_discord = document.getElementById("button_bar_discord");
 var button_bar_music = document.getElementById("button_bar_music");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
@@ -88,14 +72,32 @@ button_bar_up.addEventListener("click", function() {
         }
     });
 });
-button_bar_custom.addEventListener("click", function() {
-    var custom_text = prompt("Text")
+button_bar_custom_text.addEventListener("click", function() {
+    var custom_text = prompt("Text");
     $.ajax({
         type: "POST",
         url: "send.php",
         data: {
             action: "bar_textchange",
             bar_text: custom_text
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
+button_bar_custom_color.addEventListener("click", function() {
+    var background_color = prompt("Hintergrundfarbe");
+    var text_color = prompt("Textfarbe");
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_colorchange",
+            other: background_color + " " + text_color
         },
         success: function(data) {
             console.log(data);

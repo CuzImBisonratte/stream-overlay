@@ -9,11 +9,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
-    height: 85vh;
+    min-height: 85vh;
     max-width: 100vw;
     font-family: Dosis;
     text-transform: uppercase;
-    overflow: hidden;
     z-index: 0;
 }
 
@@ -29,7 +28,6 @@ body {
 }
 
 #main {
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -45,4 +43,32 @@ body {
     justify-content: center;
     align-items: center;
     color: #ffffff;
+}
+
+
+/* Card background colors */
+
+.bg-darkblue {
+    background-color: #2e2e3e;
+}
+
+.bg-lightblue {
+    background-color: #4287f5;
+}
+
+.bg-lightgreen {
+    background-color: #32a852;
+}
+
+.bg-orange {
+    background-color: #ff4500;
+}
+
+.bg-purple {
+    background-color: #ab20b3;
+}
+
+#button_bar_custom_height {
+    filter: blur(5px);
+    /* This is, because this feature is introduced in next backend version */
 }

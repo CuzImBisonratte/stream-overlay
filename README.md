@@ -27,6 +27,13 @@ If you don't want to use your pc as a server, you can use either a version of ou
 # Interactives - Control Buttons
 The /mixup/ folder can be controlled from /mobile_controller/  
 
+## Color coding
+Dark-Blue-Gray: Bar Height Settings
+Green: Custom
+Light-Blue: Predefined Texts
+Orange: Live-Effects
+Purple: Show/Hide elements
+
 # Interactives - commands
 
 ## All user commands
