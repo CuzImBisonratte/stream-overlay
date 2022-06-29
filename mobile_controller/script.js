@@ -31,7 +31,7 @@ function show_chart(input_percent) {
 
 var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
-var button_bar_custom = document.getElementById("button_bar_custom");
+var button_bar_custom_text = document.getElementById("button_bar_custom_text");
 var button_bar_discord = document.getElementById("button_bar_discord");
 var button_bar_music = document.getElementById("button_bar_music");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
@@ -71,7 +71,7 @@ button_bar_up.addEventListener("click", function() {
         }
     });
 });
-button_bar_custom.addEventListener("click", function() {
+button_bar_custom_text.addEventListener("click", function() {
     var custom_text = prompt("Text")
     $.ajax({
         type: "POST",
