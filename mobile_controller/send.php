@@ -6,7 +6,11 @@
     } else {
         $bar_text = "";
     }
-    $other = $_POST['other'];
+    if (isset($_POST['other'])) {
+        $other = $_POST['other'];
+    } else {
+        $other = "";
+    }
 
     // Database credentials
     $DATABASE_HOST = 'localhost';
