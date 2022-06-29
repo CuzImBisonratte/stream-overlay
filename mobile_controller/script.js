@@ -1,3 +1,13 @@
+var cfg = {};
+$.ajax({
+    url: "./config.json",
+    async: false,
+    success: function(data) {
+        cfg = data;
+    }
+});
+
+
 // Get all elements with class "bg-random"
 var bg_random_elements = document.getElementsByClassName("bg-random");
 
@@ -40,7 +50,7 @@ var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
 var button_bar_custom = document.getElementById("button_bar_custom");
 var button_bar_discord = document.getElementById("button_bar_discord");
-var button_bar_soon = document.getElementById("button_bar_soon");
+var button_bar_music = document.getElementById("button_bar_music");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
 var button_bar_color_1 = document.getElementById("button_bar_color_1");
 var button_bar_color_2 = document.getElementById("button_bar_color_2");
@@ -101,7 +111,7 @@ button_bar_discord.addEventListener("click", function() {
         url: "send.php",
         data: {
             action: "bar_textchange",
-            bar_text: "Guck auf unserem Discord vorbei: dsc.gg/fj3w67z"
+            bar_text: "Guck auf unserem Discord vorbei: " + cfg.discord_link
         },
         success: function(data) {
             console.log(data);
@@ -111,13 +121,13 @@ button_bar_discord.addEventListener("click", function() {
         }
     });
 });
-button_bar_soon.addEventListener("click", function() {
+button_bar_music.addEventListener("click", function() {
     $.ajax({
         type: "POST",
         url: "send.php",
         data: {
             action: "bar_textchange",
-            bar_text: "Bald zurück..."
+            bar_text: "Musik von " + cfg.music_credit
         },
         success: function(data) {
             console.log(data);
