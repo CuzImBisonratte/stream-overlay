@@ -100,7 +100,7 @@ button_bar_discord.addEventListener("click", function() {
         url: "send.php",
         data: {
             action: "bar_textchange",
-            bar_text: "Guck auf unserem discord vorbei: dsc.gg/fj3w67z"
+            bar_text: "Guck auf unserem Discord vorbei: dsc.gg/fj3w67z"
         },
         success: function(data) {
             console.log(data);
