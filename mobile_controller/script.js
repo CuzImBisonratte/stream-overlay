@@ -72,7 +72,7 @@ button_bar_up.addEventListener("click", function() {
     });
 });
 button_bar_custom_text.addEventListener("click", function() {
-    var custom_text = prompt("Text")
+    var custom_text = prompt("Text");
     $.ajax({
         type: "POST",
         url: "send.php",
