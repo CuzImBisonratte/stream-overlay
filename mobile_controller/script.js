@@ -32,6 +32,7 @@ function show_chart(input_percent) {
 var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
 var button_bar_custom_text = document.getElementById("button_bar_custom_text");
+var button_bar_custom_color = document.getElementById("button_bar_custom_color");
 var button_bar_discord = document.getElementById("button_bar_discord");
 var button_bar_music = document.getElementById("button_bar_music");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
@@ -79,6 +80,24 @@ button_bar_custom_text.addEventListener("click", function() {
         data: {
             action: "bar_textchange",
             bar_text: custom_text
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
+button_bar_custom_color.addEventListener("click", function() {
+    var background_color = prompt("Hintergrundfarbe");
+    var text_color = prompt("Textfarbe");
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_colorchange",
+            other: background_color + " " + text_color
         },
         success: function(data) {
             console.log(data);
