@@ -29,3 +29,10 @@ body>#countdown {
     font-family: 'Quicksand', sans-serif;
     transition: 5s;
 }
+
+#clock {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+}

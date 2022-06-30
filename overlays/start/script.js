@@ -15,6 +15,23 @@ function formatTime(number) {
     return number;
 }
 
+// The function to update the clock
+function updateTime() {
+
+    // Get the current time
+    var time = new Date();
+
+    // Get the hours, minutes and seconds
+    var hours = time.getHours();
+    var minutes = time.getMinutes();
+
+    // Add a zero in front of numbers<10
+    hours = formatTime(hours);
+    minutes = formatTime(minutes);
+
+    // Display the time
+    document.getElementById("clock").innerHTML = hours + ":" + minutes;
+}
 
 // Loop through the time until the endTime every 0,1 second
 var timer = setInterval(function() {
@@ -56,4 +73,5 @@ var timer = setInterval(function() {
             document.getElementById("countdown").innerHTML = minutes + ":" + seconds;
         }
     }
+    updateTime();
 }, 100);
