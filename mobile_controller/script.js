@@ -31,6 +31,7 @@ function show_chart(input_percent) {
 
 var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
+var button_bar_custom_height = document.getElementById("button_bar_custom_height");
 var button_bar_resize = document.getElementById("button_bar_resize");
 var button_bar_custom_text = document.getElementById("button_bar_custom_text");
 var button_bar_custom_color = document.getElementById("button_bar_custom_color");
