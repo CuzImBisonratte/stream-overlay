@@ -21,7 +21,7 @@ Confettis - Catdad - [here](https://github.com/catdad/canvas-confetti)
 
 
 ## Hosting
-If you don't want to use your pc as a server, you can use either a version of our overlay on github or you can host it yourself on a mini-pc like a raspberry pi.
+If you don't want to use your pc as a server, you can either use a version of our overlay (which is hosted on github, but the mobile control doesn't work) or you can host it yourself on a mini-pc like a raspberry pi.
 
 
 # Interactives - Control Buttons
