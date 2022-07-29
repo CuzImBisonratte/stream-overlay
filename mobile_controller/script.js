@@ -31,14 +31,15 @@ function show_chart(input_percent) {
 
 var button_bar_down = document.getElementById("button_bar_down");
 var button_bar_up = document.getElementById("button_bar_up");
+var button_bar_custom_height = document.getElementById("button_bar_custom_height");
+var button_bar_resize = document.getElementById("button_bar_resize");
 var button_bar_custom_text = document.getElementById("button_bar_custom_text");
 var button_bar_custom_color = document.getElementById("button_bar_custom_color");
+var button_bar_color_1 = document.getElementById("button_bar_color_1");
+var button_bar_color_2 = document.getElementById("button_bar_color_2");
 var button_bar_discord = document.getElementById("button_bar_discord");
 var button_bar_music = document.getElementById("button_bar_music");
 var button_bar_adversal = document.getElementById("button_bar_adversal");
-var button_bar_color_1 = document.getElementById("button_bar_color_1");
-var button_bar_color_2 = document.getElementById("button_bar_color_2");
-var button_bar_resize = document.getElementById("button_bar_resize");
 var button_effect_confetti = document.getElementById("button_effect_confetti");
 
 // Add event listeners
@@ -63,6 +64,23 @@ button_bar_up.addEventListener("click", function() {
         url: "send.php",
         data: {
             action: "bar_up"
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
+button_bar_custom_height.addEventListener("click", function() {
+    var barheight = prompt("Höhe Interaktionsleiste (px/1080)");
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_resize",
+            other: barheight + " " + (barheight / 1.5)
         },
         success: function(data) {
             console.log(data);

@@ -30,15 +30,16 @@ function slideOutBar() {
     bar_open = false;
 }
 
-function resizeBar() {
+function resizeBar(barheight, textheight) {
     // Resize the bottom bar
-    bottom_bar.style.height = bar_height + "px";
+    bottom_bar.style.height = barheight + "px";
+    bottom_bar.style.fontSize = textheight + "px";
 
     // Check if bar is not open
     if (!bar_open) {
 
         // Set the bar to the right position
-        bottom_bar.style.bottom = "-" + bar_height + "px";
+        bottom_bar.style.bottom = "-" + barheight + "px";
 
     } else {
 
@@ -48,7 +49,7 @@ function resizeBar() {
 }
 
 // Initialize the bar
-resizeBar();
+resizeBar(100, 30);
 
 // When the client receives a chat message
 client.on('message', (channel, tags, message, self) => {
@@ -108,7 +109,7 @@ client.on('message', (channel, tags, message, self) => {
                 bar_height = height;
 
                 // Resize the bar
-                resizeBar();
+                resizeBar(100, 30);
 
             } else if (message === "!barclose") {
 
@@ -317,12 +318,14 @@ setInterval(() => {
                         bottom_bar.style.color = text;
                     } else if (entry.action === "bar_resize") {
 
-                        // Set the bar height to 50
-                        bar_height = 50;
-                        resizeBar();
+                        if (entry.other) {
+                            var barheight = entry.other.split(' ')[0];
+                            var textheight = entry.other.split(' ')[1];
+                            resizeBar(barheight, textheight);
+                        } else {
+                            resizeBar(50, 35);
+                        }
 
-                        // Font size 35
-                        bottom_bar.style.fontSize = 35 + "px";
                     }
                 }
             }
