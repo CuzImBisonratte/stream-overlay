@@ -73,6 +73,23 @@ button_bar_up.addEventListener("click", function() {
         }
     });
 });
+button_bar_custom_height.addEventListener("click", function() {
+    var barheight = prompt("Höhe Interaktionsleiste (px/1080)");
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: {
+            action: "bar_resize",
+            other: barheight + " " + (barheight / 1.5)
+        },
+        success: function(data) {
+            console.log(data);
+        },
+        error: function(data) {
+            console.log(data);
+        }
+    });
+});
 button_bar_custom_text.addEventListener("click", function() {
     var custom_text = prompt("Text");
     $.ajax({

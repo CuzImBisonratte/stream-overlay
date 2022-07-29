@@ -67,8 +67,3 @@ body {
 .bg-purple {
     background-color: #ab20b3;
 }
-
-#button_bar_custom_height {
-    filter: blur(5px);
-    /* This is, because this feature is introduced in next backend version */
-}
